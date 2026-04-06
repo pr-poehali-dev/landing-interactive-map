@@ -57,10 +57,13 @@ export default function Header() {
         </nav>
 
         <div className="hidden lg:flex items-center gap-3">
-          <a href="tel:+78001234567" className="text-sm font-medium text-gray-600 hover:text-foreground transition-colors flex items-center gap-1.5">
-            <Icon name="Phone" size={14} />
-            8 800 123-45-67
-          </a>
+          <Link
+            to="/dashboard"
+            className="text-sm font-medium text-gray-600 hover:text-foreground transition-colors flex items-center gap-1.5"
+          >
+            <Icon name="User" size={14} />
+            Кабинет
+          </Link>
           <Link
             to="/tariffs"
             className="text-sm font-semibold text-white bg-v-500 hover:bg-v-600 px-5 py-2.5 rounded-lg transition-colors"
@@ -87,6 +90,12 @@ export default function Header() {
               {n.label}
             </Link>
           ))}
+          <Link
+            to="/dashboard"
+            className="block px-4 py-2.5 text-sm font-medium rounded-lg text-gray-600 hover:bg-gray-50"
+          >
+            Личный кабинет
+          </Link>
           <Link
             to="/tariffs"
             className="block text-center text-sm font-semibold text-white bg-v-500 px-4 py-2.5 rounded-lg mt-2"
