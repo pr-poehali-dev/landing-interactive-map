@@ -121,7 +121,7 @@ function SpeedGauge({
 
 export function LiveBadge() {
   return (
-    <span className="inline-flex items-center gap-1.5 text-xs font-semibold text-v-600 bg-v-50 border border-v-100 rounded-full px-3 py-1">
+    <span className="inline-flex items-center gap-1.5 text-xs font-semibold text-v-600 bg-v-50 border border-v-200 rounded-full px-3 py-1">
       <span className="w-1.5 h-1.5 rounded-full bg-emerald-500 animate-pulse" />
       Live
     </span>

@@ -116,7 +116,7 @@ export default function ServerList({
               placeholder="Поиск по стране или городу..."
               value={search}
               onChange={(e) => setSearch(e.target.value)}
-              className="w-full pl-10 pr-4 py-2.5 text-sm rounded-xl border border-white/[0.15] bg-white/[0.06] placeholder:text-gray-400 focus:outline-none focus:border-v-300 focus:ring-2 focus:ring-v-100 transition-all"
+              className="w-full pl-10 pr-4 py-2.5 text-sm rounded-xl border border-gray-200 bg-white placeholder:text-gray-400 focus:outline-none focus:border-v-300 focus:ring-2 focus:ring-v-100 transition-all"
             />
             {search && (
               <button
@@ -135,7 +135,7 @@ export default function ServerList({
               className={`text-sm font-medium px-4 py-2.5 rounded-xl transition-all ${
                 !activeRegion
                   ? "bg-v-500 text-white shadow-sm"
-                  : "bg-white/[0.06] text-gray-400 border border-white/[0.15] hover:border-v-200 hover:text-v-600"
+                  : "bg-white text-gray-400 border border-gray-200 hover:border-v-200 hover:text-v-600"
               }`}
             >
               Все
@@ -147,7 +147,7 @@ export default function ServerList({
                 className={`inline-flex items-center gap-1.5 text-sm font-medium px-4 py-2.5 rounded-xl transition-all ${
                   activeRegion === r.key
                     ? "bg-v-500 text-white shadow-sm"
-                    : "bg-white/[0.06] text-gray-400 border border-white/[0.15] hover:border-v-200 hover:text-v-600"
+                    : "bg-white text-gray-400 border border-gray-200 hover:border-v-200 hover:text-v-600"
                 }`}
               >
                 <Icon name={r.icon} size={14} />
@@ -209,7 +209,7 @@ export default function ServerList({
                   {region.servers.map((server, si) => (
                     <div
                       key={`${server.country}-${server.city}-${si}`}
-                      className="group relative rounded-xl border border-white/10 bg-white/[0.06] p-5 hover:border-v-200 hover:shadow-md transition-all"
+                      className="group relative rounded-xl border border-gray-200 bg-white p-5 hover:border-v-200 hover:shadow-md transition-all"
                     >
                       {/* Online dot */}
                       <span

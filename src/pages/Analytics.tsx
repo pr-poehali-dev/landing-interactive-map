@@ -8,7 +8,7 @@ import ChartsSection from "@/components/analytics/ChartsSection";
 import InfrastructureAndCta from "@/components/analytics/InfrastructureAndCta";
 
 const ANALYTICS_IMG =
-  "https://cdn.poehali.dev/projects/873a5974-24fa-404f-a1ef-56c0a5af27b5/files/eaf956dc-e250-416d-9a19-3fbf1c4fcb3c.jpg";
+  "https://cdn.poehali.dev/projects/873a5974-24fa-404f-a1ef-56c0a5af27b5/files/90072286-46f6-42cc-8291-a240b607c0a8.jpg";
 
 /* ───── main component ───── */
 
@@ -27,11 +27,11 @@ export default function Analytics() {
 
       {/* Hero */}
       <section className="relative pt-28 pb-16 md:pt-36 md:pb-20 overflow-hidden">
-        <div className="absolute inset-0 bg-gradient-to-br from-emerald-950/50 via-transparent to-transparent" />
+        <div className="absolute inset-0 bg-gradient-to-br from-[#F1F1F8] via-[#F1F1F8] to-transparent" />
         <div className="relative max-w-7xl mx-auto px-5">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             <div>
-              <div className="inline-flex items-center gap-2 text-sm font-medium text-emerald-300 bg-emerald-500/15 border border-emerald-500/25 rounded-full px-4 py-1.5 mb-6 animate-fade-up">
+              <div className="inline-flex items-center gap-2 text-sm font-medium text-v-600 bg-v-50 border border-v-200 rounded-full px-4 py-1.5 mb-6 animate-fade-up">
                 <span className="w-2 h-2 rounded-full bg-emerald-500 animate-pulse" />
                 Мониторинг в реальном времени
               </div>

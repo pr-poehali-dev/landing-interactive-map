@@ -2,7 +2,7 @@ import { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import Icon from "@/components/ui/icon";
 
-const HERO_IMG = "https://cdn.poehali.dev/projects/873a5974-24fa-404f-a1ef-56c0a5af27b5/files/ead7355f-ddfd-4823-bdc0-8fff2bec42e0.jpg";
+const HERO_IMG = "https://cdn.poehali.dev/projects/873a5974-24fa-404f-a1ef-56c0a5af27b5/files/edc41c8d-c972-4c0f-b8e9-8a17b89cc496.jpg";
 
 const STATS = [
   { value: 94200, label: "Пользователей", suffix: "+" },
@@ -41,11 +41,11 @@ function Stat({ value, suffix, label }: { value: number; suffix: string; label: 
 export default function HeroSection() {
   return (
     <section className="relative overflow-hidden pt-28 pb-20 md:pt-36 md:pb-28">
-      <div className="absolute inset-0 bg-gradient-to-br from-emerald-950/50 via-transparent to-transparent" />
+      <div className="absolute inset-0 bg-gradient-to-br from-[#F1F1F8] via-[#F1F1F8] to-transparent" />
       <div className="relative max-w-7xl mx-auto px-5">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
           <div>
-            <div className="inline-flex items-center gap-2 text-sm font-medium text-emerald-300 bg-emerald-500/15 border border-emerald-500/25 rounded-full px-4 py-1.5 mb-6 animate-fade-up">
+            <div className="inline-flex items-center gap-2 text-sm font-medium text-v-600 bg-v-50 border border-v-200 rounded-full px-4 py-1.5 mb-6 animate-fade-up">
               <span className="w-2 h-2 rounded-full bg-emerald-500 animate-pulse" />
               Все серверы онлайн
             </div>
@@ -77,7 +77,7 @@ export default function HeroSection() {
               </Link>
               <a
                 href="#advantages"
-                className="inline-flex items-center gap-2 text-sm font-semibold text-foreground bg-white/[0.06] hover:bg-white/10 px-6 py-3 rounded-lg border border-white/[0.15] transition-all"
+                className="inline-flex items-center gap-2 text-sm font-semibold text-foreground bg-white hover:bg-gray-50 px-6 py-3 rounded-lg border border-gray-200 transition-all"
               >
                 Подробнее
               </a>

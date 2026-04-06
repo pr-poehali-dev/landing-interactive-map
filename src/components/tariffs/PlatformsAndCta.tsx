@@ -39,9 +39,9 @@ export default function PlatformsAndCta({ setActiveTab }: PlatformsAndCtaProps) 
             {PLATFORMS.map((p) => (
               <div
                 key={p.label}
-                className="flex flex-col items-center gap-3 rounded-2xl border border-white/10 bg-white/[0.06] py-8 px-4 hover:border-v-200 hover:shadow-md transition-all group"
+                className="flex flex-col items-center gap-3 rounded-2xl border border-gray-200 bg-white py-8 px-4 hover:border-v-200 hover:shadow-md transition-all group"
               >
-                <div className="w-14 h-14 rounded-2xl bg-white/[0.03] group-hover:bg-v-50 flex items-center justify-center transition-colors">
+                <div className="w-14 h-14 rounded-2xl bg-gray-50 group-hover:bg-v-50 flex items-center justify-center transition-colors">
                   <Icon name={p.icon} size={26} className="text-gray-400 group-hover:text-v-500 transition-colors" />
                 </div>
                 <div>

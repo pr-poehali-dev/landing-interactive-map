@@ -5,7 +5,7 @@ export default function InfrastructureAndCta() {
   return (
     <>
       {/* Infrastructure details */}
-      <section className="px-5 pb-20 bg-gray-50 pt-20">
+      <section className="px-5 pb-20 bg-[#F1F1F8] pt-20">
         <div className="max-w-7xl mx-auto">
           <h2 className="text-2xl md:text-3xl font-extrabold text-foreground text-center mb-3 animate-fade-up">
             Инфраструктура мониторинга

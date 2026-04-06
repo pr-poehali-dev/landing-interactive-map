@@ -124,7 +124,7 @@ export default function FaqSection({
   ];
 
   return (
-    <section className="px-5 pb-20 pt-20 bg-gray-50">
+    <section className="px-5 pb-20 pt-20 bg-[#F1F1F8]">
       <div className="max-w-3xl mx-auto">
         <h2
           className="text-2xl md:text-3xl font-extrabold text-foreground text-center mb-3 animate-fade-up"

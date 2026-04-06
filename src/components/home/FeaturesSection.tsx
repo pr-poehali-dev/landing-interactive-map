@@ -1,8 +1,8 @@
 import { Link } from "react-router-dom";
 import Icon from "@/components/ui/icon";
 
-const SERVERS_IMG = "https://cdn.poehali.dev/projects/873a5974-24fa-404f-a1ef-56c0a5af27b5/files/661a801c-b2a9-4a99-b77c-0bd4d70d6d82.jpg";
-const ANALYTICS_IMG = "https://cdn.poehali.dev/projects/873a5974-24fa-404f-a1ef-56c0a5af27b5/files/eaf956dc-e250-416d-9a19-3fbf1c4fcb3c.jpg";
+const SERVERS_IMG = "https://cdn.poehali.dev/projects/873a5974-24fa-404f-a1ef-56c0a5af27b5/files/a7d2f986-29ab-4ea8-af68-45d19853b807.jpg";
+const ANALYTICS_IMG = "https://cdn.poehali.dev/projects/873a5974-24fa-404f-a1ef-56c0a5af27b5/files/90072286-46f6-42cc-8291-a240b607c0a8.jpg";
 
 const ADVANTAGES = [
   { icon: "Zap", title: "До 1 Гбит/с", desc: "Без ограничений трафика и скорости. Премиум-каналы в каждом дата-центре." },
@@ -101,7 +101,7 @@ export default function FeaturesSection() {
               return (
                 <div
                   key={a.title}
-                  className="group rounded-2xl overflow-hidden border border-white/10 hover:shadow-xl transition-all animate-fade-up flex flex-col"
+                  className="group rounded-2xl overflow-hidden border border-gray-200 hover:shadow-xl transition-all animate-fade-up flex flex-col"
                   style={{ opacity: 0, animationDelay: `${i * 0.07}s` }}
                 >
                   {/* TOP: Colored gradient bar with icon */}
@@ -111,13 +111,13 @@ export default function FeaturesSection() {
                     {/* Decorative circle shape */}
                     <div className="absolute -right-4 -top-4 w-24 h-24 rounded-full bg-white/10" />
                     <div className="absolute right-8 bottom-2 w-10 h-10 rounded-full bg-white/5" />
-                    <div className="w-12 h-12 rounded-xl bg-white/[0.06] text-gray-800 flex items-center justify-center shadow-sm relative z-10">
+                    <div className="w-12 h-12 rounded-xl bg-white text-gray-800 flex items-center justify-center shadow-sm relative z-10">
                       <Icon name={a.icon} size={22} />
                     </div>
                   </div>
 
                   {/* MIDDLE: White body */}
-                  <div className="bg-white/[0.06] px-7 pt-5 pb-4 flex-1">
+                  <div className="bg-white px-7 pt-5 pb-4 flex-1">
                     <h3 className="text-base font-semibold text-foreground mb-2">{a.title}</h3>
                     <p className="text-sm text-gray-500 leading-relaxed">{a.desc}</p>
                   </div>
@@ -137,7 +137,7 @@ export default function FeaturesSection() {
       </section>
 
       {/* Plans preview */}
-      <section className="py-24 px-5 bg-white/[0.03]">
+      <section className="py-24 px-5 bg-[#F1F1F8]">
         <div className="max-w-7xl mx-auto">
           <div className="text-center mb-16">
             <p className="text-sm font-semibold text-v-500 mb-2">Тарифы</p>
@@ -183,7 +183,7 @@ export default function FeaturesSection() {
                   </div>
 
                   {/* MIDDLE: White body */}
-                  <div className="bg-white/[0.06] px-8 pt-6 pb-5 flex-1">
+                  <div className="bg-white px-8 pt-6 pb-5 flex-1">
                     <div className="flex items-baseline gap-1 mb-2">
                       <span className="text-4xl font-extrabold text-foreground">{plan.price}</span>
                       <span className="text-gray-400">₽/{plan.period}</span>
@@ -192,7 +192,7 @@ export default function FeaturesSection() {
                   </div>
 
                   {/* BOTTOM: Colored light footer */}
-                  <div className={`${theme.light} px-8 py-5 border-t border-white/10`}>
+                  <div className={`${theme.light} px-8 py-5 border-t border-gray-200`}>
                     <Link
                       to="/tariffs"
                       className={`block w-full py-3 rounded-lg text-sm font-semibold text-center transition-colors ${theme.btn} ${theme.btnText}`}
@@ -246,7 +246,7 @@ export default function FeaturesSection() {
                 return (
                   <div
                     key={s.city}
-                    className={`relative rounded-xl overflow-hidden border border-white/10 hover:shadow-md transition-all animate-fade-up border-l-4 ${lc.border}`}
+                    className={`relative rounded-xl overflow-hidden border border-gray-200 hover:shadow-md transition-all animate-fade-up border-l-4 ${lc.border}`}
                     style={{ opacity: 0, animationDelay: `${i * 0.06}s` }}
                   >
                     {/* Subtle colored background stripe on left */}
@@ -302,7 +302,7 @@ export default function FeaturesSection() {
       </section>
 
       {/* Analytics image block */}
-      <section className="py-24 px-5 bg-white/[0.03]">
+      <section className="py-24 px-5 bg-[#F1F1F8]">
         <div className="max-w-7xl mx-auto">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
             <div className="order-2 lg:order-1">
@@ -329,7 +329,7 @@ export default function FeaturesSection() {
                 ].map((f, i) => (
                   <div
                     key={f.title}
-                    className="flex gap-4 p-4 rounded-xl bg-white/[0.06] border border-white/10 hover:shadow-md transition-all animate-fade-up"
+                    className="flex gap-4 p-4 rounded-xl bg-white border border-gray-200 hover:shadow-md transition-all animate-fade-up"
                     style={{ opacity: 0, animationDelay: `${i * 0.1}s` }}
                   >
                     <div className={`w-11 h-11 rounded-lg ${f.bg} ${f.text} flex items-center justify-center shrink-0`}>
@@ -373,12 +373,12 @@ export default function FeaturesSection() {
               return (
                 <div
                   key={p.label}
-                  className="group flex flex-col items-center gap-3 pt-0 pb-6 px-4 bg-white/[0.06] border border-white/10 rounded-xl overflow-hidden hover:shadow-lg hover:border-white/[0.15] transition-all animate-fade-up"
+                  className="group flex flex-col items-center gap-3 pt-0 pb-6 px-4 bg-white border border-gray-200 rounded-xl overflow-hidden hover:shadow-lg hover:border-gray-200 transition-all animate-fade-up"
                   style={{ opacity: 0, animationDelay: `${i * 0.06}s` }}
                 >
                   {/* Top gradient stripe */}
                   <div className={`w-full h-[3px] bg-gradient-to-r ${stripe} mb-4`} />
-                  <div className="w-12 h-12 rounded-xl bg-white/[0.03] flex items-center justify-center group-hover:scale-110 transition-transform">
+                  <div className="w-12 h-12 rounded-xl bg-gray-50 flex items-center justify-center group-hover:scale-110 transition-transform">
                     <Icon name={p.icon} size={26} className="text-gray-700 group-hover:text-v-500 transition-colors" />
                   </div>
                   <span className="text-xs font-medium text-gray-400">{p.label}</span>
