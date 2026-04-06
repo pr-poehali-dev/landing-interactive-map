@@ -20,7 +20,7 @@ const COMPARE_ROWS: { label: string; values: (string | boolean)[] }[] = [
 
 export default function ComparisonTable() {
   return (
-    <section className="py-20 px-5 bg-gray-50">
+    <section className="py-20 px-5 bg-white/[0.03]">
       <div className="max-w-7xl mx-auto">
         <h2
           className="text-2xl md:text-3xl font-extrabold text-foreground text-center mb-3 animate-fade-up"
@@ -35,17 +35,17 @@ export default function ComparisonTable() {
         </p>
 
         <div
-          className="overflow-x-auto rounded-2xl border border-gray-200 bg-white shadow-sm animate-fade-up"
+          className="overflow-x-auto rounded-2xl border border-white/[0.15] bg-white/[0.06] shadow-sm animate-fade-up"
           style={{ animationDelay: ".15s", opacity: 0 }}
         >
           <table className="w-full min-w-[800px] text-sm">
             <thead>
-              <tr className="border-b border-gray-100">
-                <th className="text-left font-semibold text-foreground py-4 px-6 bg-gray-50/80 sticky left-0 z-10">
+              <tr className="border-b border-white/10">
+                <th className="text-left font-semibold text-foreground py-4 px-6 bg-white/[0.03] sticky left-0 z-10">
                   Функция
                 </th>
                 {COMPARE_PLANS.map((plan) => (
-                  <th key={plan} className="text-center font-semibold text-foreground py-4 px-4 bg-gray-50/80">
+                  <th key={plan} className="text-center font-semibold text-foreground py-4 px-4 bg-white/[0.03]">
                     <span className="block text-xs">{plan}</span>
                   </th>
                 ))}
@@ -55,7 +55,7 @@ export default function ComparisonTable() {
               {COMPARE_ROWS.map((row, ri) => (
                 <tr
                   key={row.label}
-                  className={`border-b border-gray-50 last:border-0 ${ri % 2 === 0 ? "" : "bg-gray-50/40"}`}
+                  className={`border-b border-white/5 last:border-0 ${ri % 2 === 0 ? "" : "bg-white/[0.02]"}`}
                 >
                   <td className="py-3.5 px-6 font-medium text-foreground sticky left-0 z-10 bg-inherit">
                     {row.label}
@@ -68,12 +68,12 @@ export default function ComparisonTable() {
                             <Icon name="Check" size={14} className="text-v-500" />
                           </span>
                         ) : (
-                          <span className="inline-flex items-center justify-center w-6 h-6 rounded-full bg-gray-50">
+                          <span className="inline-flex items-center justify-center w-6 h-6 rounded-full bg-white/[0.03]">
                             <span className="text-gray-300 text-xs font-bold">&mdash;</span>
                           </span>
                         )
                       ) : (
-                        <span className="text-gray-600 font-medium text-xs">{val}</span>
+                        <span className="text-gray-400 font-medium text-xs">{val}</span>
                       )}
                     </td>
                   ))}

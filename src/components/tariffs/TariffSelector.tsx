@@ -170,7 +170,7 @@ export default function TariffSelector({ activeTab, setActiveTab }: TariffSelect
                 className={`inline-flex items-center gap-2 text-sm font-semibold px-5 py-2.5 rounded-xl transition-all ${
                   activeTab === tab.key
                     ? `${tc.btnBg} text-white shadow-lg shadow-${tab.key === "turbo" ? "navy" : tab.key === "personal" ? "v" : tab.key}-500/20`
-                    : "bg-white text-gray-500 border border-gray-200 hover:bg-gray-50 hover:text-gray-700"
+                    : "bg-white/[0.06] text-gray-500 border border-white/[0.15] hover:bg-white/10 hover:text-gray-700"
                 }`}
               >
                 <Icon name={tab.icon} size={16} />
@@ -220,16 +220,16 @@ export default function TariffSelector({ activeTab, setActiveTab }: TariffSelect
               </div>
 
               {/* Diagonal cut */}
-              <div className="absolute bottom-0 left-0 right-0 h-5 bg-white" style={{ clipPath: "polygon(0 100%, 100% 0, 100% 100%)" }} />
+              <div className="absolute bottom-0 left-0 right-0 h-5 bg-white/[0.06]" style={{ clipPath: "polygon(0 100%, 100% 0, 100% 100%)" }} />
             </div>
 
             {/* ZONE 2: Features on white */}
-            <div className="bg-white px-8 py-7">
+            <div className="bg-white/[0.06] px-8 py-7">
               <div className="grid grid-cols-2 gap-x-6 gap-y-3">
                 {plan.features.map((f, i) => (
                   <div key={i} className="flex items-center gap-2.5">
                     <div className={`w-5 h-5 rounded-full flex items-center justify-center shrink-0 ${
-                      f.included ? c.bgLight : "bg-gray-100"
+                      f.included ? c.bgLight : "bg-white/10"
                     }`}>
                       <Icon
                         name={f.included ? "Check" : "Minus"}
@@ -303,7 +303,7 @@ export default function TariffSelector({ activeTab, setActiveTab }: TariffSelect
                   </div>
 
                   {/* Mini white body */}
-                  <div className="bg-white px-5 py-4 border-x border-gray-100">
+                  <div className="bg-white/[0.06] px-5 py-4 border-x border-white/10">
                     <div className="text-xl font-extrabold text-foreground mb-1">{p.price}</div>
                     <div className="flex flex-col gap-0.5 text-xs text-gray-500">
                       <span>{p.devices}</span>

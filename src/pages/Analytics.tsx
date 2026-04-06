@@ -27,11 +27,11 @@ export default function Analytics() {
 
       {/* Hero */}
       <section className="relative pt-28 pb-16 md:pt-36 md:pb-20 overflow-hidden">
-        <div className="absolute inset-0 bg-gradient-to-br from-v-50 via-white to-emerald-50/30" />
+        <div className="absolute inset-0 bg-gradient-to-br from-emerald-950/50 via-transparent to-transparent" />
         <div className="relative max-w-7xl mx-auto px-5">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             <div>
-              <div className="inline-flex items-center gap-2 text-sm font-medium text-v-600 bg-v-50 border border-v-100 rounded-full px-4 py-1.5 mb-6 animate-fade-up">
+              <div className="inline-flex items-center gap-2 text-sm font-medium text-emerald-300 bg-emerald-500/15 border border-emerald-500/25 rounded-full px-4 py-1.5 mb-6 animate-fade-up">
                 <span className="w-2 h-2 rounded-full bg-emerald-500 animate-pulse" />
                 Мониторинг в реальном времени
               </div>

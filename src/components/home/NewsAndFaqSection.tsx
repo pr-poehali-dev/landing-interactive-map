@@ -19,7 +19,7 @@ const NEWS = [
 function FaqItem({ q, a }: { q: string; a: string }) {
   const [open, setOpen] = useState(false);
   return (
-    <div className="border-b border-gray-100 last:border-0">
+    <div className="border-b border-white/10 last:border-0">
       <button
         onClick={() => setOpen(!open)}
         className="w-full flex items-center justify-between py-5 text-left gap-4"
@@ -36,7 +36,7 @@ export default function NewsAndFaqSection() {
   return (
     <>
       {/* News */}
-      <section className="py-24 px-5 bg-gray-50">
+      <section className="py-24 px-5 bg-white/[0.03]">
         <div className="max-w-7xl mx-auto">
           <div className="flex items-end justify-between mb-12">
             <div>
@@ -58,7 +58,7 @@ export default function NewsAndFaqSection() {
               <Link
                 key={n.title}
                 to="/blog"
-                className="bg-white border border-gray-100 rounded-2xl p-7 hover:shadow-lg hover:border-v-100 transition-all animate-fade-up"
+                className="bg-white/[0.06] border border-white/10 rounded-2xl p-7 hover:shadow-lg hover:border-v-100 transition-all animate-fade-up"
                 style={{ opacity: 0, animationDelay: `${i * 0.08}s` }}
               >
                 <span className="text-xs font-medium text-v-500">{n.date} 2025</span>
@@ -80,7 +80,7 @@ export default function NewsAndFaqSection() {
             </h2>
           </div>
 
-          <div className="bg-white border border-gray-100 rounded-2xl px-7">
+          <div className="bg-white/[0.06] border border-white/10 rounded-2xl px-7">
             {FAQ_ITEMS.map((f) => (
               <FaqItem key={f.q} q={f.q} a={f.a} />
             ))}
@@ -118,7 +118,7 @@ export default function NewsAndFaqSection() {
               <div className="flex flex-wrap justify-center gap-4">
                 <Link
                   to="/tariffs"
-                  className="inline-flex items-center gap-2 text-sm font-semibold text-v-500 bg-white hover:bg-gray-50 px-6 py-3 rounded-lg transition-all"
+                  className="inline-flex items-center gap-2 text-sm font-semibold text-v-500 bg-white/[0.06] hover:bg-white/[0.03] px-6 py-3 rounded-lg transition-all"
                 >
                   Смотреть тарифы <Icon name="ArrowRight" size={16} />
                 </Link>

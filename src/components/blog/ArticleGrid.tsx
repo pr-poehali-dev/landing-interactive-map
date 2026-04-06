@@ -42,7 +42,7 @@ export default function ArticleGrid({
                 className={`inline-flex items-center gap-2 text-sm font-medium px-5 py-2.5 rounded-xl transition-all ${
                   activeCategory === cat.key
                     ? "bg-v-500 text-white shadow-sm"
-                    : "bg-white text-gray-600 border border-gray-200 hover:border-v-200 hover:text-v-600 hover:bg-v-50"
+                    : "bg-white text-gray-400 border border-gray-200 hover:border-v-200 hover:text-v-600 hover:bg-v-50"
                 }`}
               >
                 <Icon name={cat.icon} size={15} />

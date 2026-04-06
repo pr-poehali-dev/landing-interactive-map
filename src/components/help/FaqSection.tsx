@@ -150,7 +150,7 @@ export default function FaqSection({
               className={`text-sm font-medium px-4 py-2 rounded-xl transition-all ${
                 activeCategory === cat.key
                   ? "bg-v-500 text-white shadow-sm"
-                  : "bg-white text-gray-600 border border-gray-200 hover:border-v-200 hover:text-v-600"
+                  : "bg-white text-gray-400 border border-gray-200 hover:border-v-200 hover:text-v-600"
               }`}
             >
               {cat.label}

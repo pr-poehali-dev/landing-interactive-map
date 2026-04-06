@@ -42,7 +42,7 @@ const COLS = [
 
 export default function Footer() {
   return (
-    <footer className="bg-gray-50 border-t">
+    <footer className="bg-[#060d0a] border-t border-white/10">
       <div className="max-w-7xl mx-auto px-5 pt-16 pb-8">
         <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-5 gap-8 mb-12">
           <div className="col-span-2 md:col-span-4 lg:col-span-1 mb-4 lg:mb-0">
@@ -54,18 +54,18 @@ export default function Footer() {
                 VORTEX<span className="text-v-500"> VPN</span>
               </span>
             </Link>
-            <p className="text-sm text-gray-500 leading-relaxed max-w-xs mb-5">
+            <p className="text-sm text-gray-400 leading-relaxed max-w-xs mb-5">
               VPN-провайдер нового поколения. 80+ серверов, шифрование военного класса, поддержка 24/7.
             </p>
             <div className="flex items-center gap-3">
-              <a href="#" className="w-9 h-9 rounded-lg bg-gray-100 hover:bg-v-50 flex items-center justify-center transition-colors">
-                <Icon name="Send" size={16} className="text-gray-500" />
+              <a href="#" className="w-9 h-9 rounded-lg bg-white/10 hover:bg-v-50 flex items-center justify-center transition-colors">
+                <Icon name="Send" size={16} className="text-gray-400" />
               </a>
-              <a href="#" className="w-9 h-9 rounded-lg bg-gray-100 hover:bg-v-50 flex items-center justify-center transition-colors">
-                <Icon name="MessageCircle" size={16} className="text-gray-500" />
+              <a href="#" className="w-9 h-9 rounded-lg bg-white/10 hover:bg-v-50 flex items-center justify-center transition-colors">
+                <Icon name="MessageCircle" size={16} className="text-gray-400" />
               </a>
-              <a href="#" className="w-9 h-9 rounded-lg bg-gray-100 hover:bg-v-50 flex items-center justify-center transition-colors">
-                <Icon name="Mail" size={16} className="text-gray-500" />
+              <a href="#" className="w-9 h-9 rounded-lg bg-white/10 hover:bg-v-50 flex items-center justify-center transition-colors">
+                <Icon name="Mail" size={16} className="text-gray-400" />
               </a>
             </div>
           </div>
@@ -76,7 +76,7 @@ export default function Footer() {
               <ul className="space-y-2.5">
                 {col.links.map((l) => (
                   <li key={l.label}>
-                    <Link to={l.to} className="text-sm text-gray-500 hover:text-v-500 transition-colors">
+                    <Link to={l.to} className="text-sm text-gray-400 hover:text-v-500 transition-colors">
                       {l.label}
                     </Link>
                   </li>
@@ -86,16 +86,16 @@ export default function Footer() {
           ))}
         </div>
 
-        <div className="border-t pt-8 flex flex-col md:flex-row items-center justify-between gap-4">
+        <div className="border-t border-white/10 pt-8 flex flex-col md:flex-row items-center justify-between gap-4">
           <p className="text-xs text-gray-400">&copy; 2025 Vortex VPN. Все права защищены.</p>
           <div className="flex items-center gap-6">
-            <Link to="/" className="text-xs text-gray-400 hover:text-gray-600 transition-colors">
+            <Link to="/" className="text-xs text-gray-400 hover:text-gray-300 transition-colors">
               Политика конфиденциальности
             </Link>
-            <Link to="/" className="text-xs text-gray-400 hover:text-gray-600 transition-colors">
+            <Link to="/" className="text-xs text-gray-400 hover:text-gray-300 transition-colors">
               Условия использования
             </Link>
-            <Link to="/" className="text-xs text-gray-400 hover:text-gray-600 transition-colors">
+            <Link to="/" className="text-xs text-gray-400 hover:text-gray-300 transition-colors">
               SLA
             </Link>
           </div>

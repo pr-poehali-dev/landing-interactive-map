@@ -27,7 +27,7 @@ export default function Header() {
   return (
     <header
       className={`fixed top-0 inset-x-0 z-50 transition-all duration-300 ${
-        scrolled ? "bg-white/95 backdrop-blur-lg shadow-sm" : "bg-white/60 backdrop-blur-sm"
+        scrolled ? "bg-[#0a1210]/95 backdrop-blur-lg shadow-sm" : "bg-[#0a1210]/60 backdrop-blur-sm"
       }`}
     >
       <div className="max-w-7xl mx-auto px-5 h-16 flex items-center justify-between">
@@ -48,7 +48,7 @@ export default function Header() {
               className={`px-3.5 py-2 text-sm font-medium rounded-lg transition-colors ${
                 pathname === n.to
                   ? "text-v-600 bg-v-50"
-                  : "text-gray-600 hover:text-foreground hover:bg-gray-50"
+                  : "text-gray-400 hover:text-foreground hover:bg-white/10"
               }`}
             >
               {n.label}
@@ -59,7 +59,7 @@ export default function Header() {
         <div className="hidden lg:flex items-center gap-3">
           <Link
             to="/dashboard"
-            className="text-sm font-medium text-gray-600 hover:text-foreground transition-colors flex items-center gap-1.5"
+            className="text-sm font-medium text-gray-400 hover:text-foreground transition-colors flex items-center gap-1.5"
           >
             <Icon name="User" size={14} />
             Кабинет
@@ -78,13 +78,13 @@ export default function Header() {
       </div>
 
       {open && (
-        <div className="lg:hidden bg-white border-t px-5 pb-4 pt-2 space-y-1 shadow-lg">
+        <div className="lg:hidden bg-[#0f1a14] border-t border-white/10 px-5 pb-4 pt-2 space-y-1 shadow-lg">
           {NAV.map((n) => (
             <Link
               key={n.to}
               to={n.to}
               className={`block px-4 py-2.5 text-sm font-medium rounded-lg ${
-                pathname === n.to ? "text-v-600 bg-v-50" : "text-gray-600 hover:bg-gray-50"
+                pathname === n.to ? "text-v-600 bg-v-50" : "text-gray-400 hover:bg-white/10"
               }`}
             >
               {n.label}
@@ -92,7 +92,7 @@ export default function Header() {
           ))}
           <Link
             to="/dashboard"
-            className="block px-4 py-2.5 text-sm font-medium rounded-lg text-gray-600 hover:bg-gray-50"
+            className="block px-4 py-2.5 text-sm font-medium rounded-lg text-gray-400 hover:bg-white/10"
           >
             Личный кабинет
           </Link>
